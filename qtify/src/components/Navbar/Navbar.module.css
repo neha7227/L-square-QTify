@@ -2,11 +2,13 @@
   background-color: var(--color-primary);
   /* background: var(--Primary-400, #34C94B); */
   /* width: 1440px; */
-  width: 100vw;
+  /* width: 100vw; */
   height: 74px;
   /* flex-shrink: 0; */
   /* figma */
 padding: 0px 32px;
+/* padding: 10px 10px; */
+
 display: flex;
 align-items: center;
 justify-content: space-between;
