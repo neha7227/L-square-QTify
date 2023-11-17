@@ -1,0 +1,43 @@
+.search{
+width: 568px;
+height: 44px;
+top: 13px;
+/* left: 436px; */
+border: 1px solid #121212 ;
+border-radius :8px 0px 0px 8px ;
+background-color: var(--color-white);
+padding-left: 20px;
+
+
+}
+
+.SearchIcon {
+  width: 20px;
+  height: 20px;
+  top: 13px;
+  left: 961px;
+  right: 459px ; /* added from figma */
+
+}
+
+.searchButton{
+width: 66px;
+/* height: 48px; */
+height: 100%;
+top: 13px;
+left: 938px;
+right: 436px;
+border: 1px solid #121212;
+border-radius: 0px 8px 8px 0px ;
+border-left:none;
+padding: 14px 20px;
+cursor: pointer;
+background-color: var(--color-white);
+
+}
+
+.wrapper {
+display: flex;
+align-items: center;
+height: 48px;
+}
