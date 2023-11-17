@@ -1,5 +1,6 @@
 import React from "react";
-import "./Navbar.modules.css";
+// import "./Navbar.modules.css";
+import styles from "./Navbar.module.css";
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import Search from "../Search/Search";
@@ -7,7 +8,7 @@ import Search from "../Search/Search";
 function Navbar() {
   return (
     <>
-      <nav className="navbar">
+      <nav className={styles.navbar}>
         <a href="/">
           <Logo />
         </a>

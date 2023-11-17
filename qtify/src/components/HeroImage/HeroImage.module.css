@@ -1,0 +1,8 @@
+.hero{
+
+width: 212px;
+height: 212px;
+flex-shrink: 0;
+top: 29px;
+padding-top: 30px ;
+}
