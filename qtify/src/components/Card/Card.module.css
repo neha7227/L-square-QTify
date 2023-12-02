@@ -1,0 +1,139 @@
+/*
+.wrapper{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;
+}
+
+.card{
+  position: relative;
+  width: 160px;
+  height: 205px;
+  flex-shrink: 0;
+  border-radius: 10px;
+background: #FFF;
+}
+
+.titleWrapper{
+   color: #FFF; // comment from here
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 6px;  // comment till here
+
+
+margin-top: 6px;
+overflow: hidden;
+text-transform: ellipsis;
+-webkit-line-clamp: 2;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+
+}
+
+.banner{
+  position: absolute;
+  display: inline-flex;
+padding: 4px 8px;
+align-items: flex-start;
+gap: 1px;
+border-radius: 10px;
+background: #121212;
+
+}
+
+.chip{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--color-black);
+  color: white;
+}
+
+.pill{
+font-size: 12px;
+background-color: var(--color-black);
+width: max-content;
+padding: 6;
+border-radius: 10px;
+
+}
+*/
+
+
+
+.wrapper{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+
+}
+
+.card{
+  width: 160px;
+  height: 205px;
+  flex-shrink: 0;
+  border-radius: 10px;
+background: #FFF;
+position: relative;
+/* gap: 6px; */
+
+}
+
+.image{
+  width: 159px;
+height: 170px;
+flex-shrink: 0;
+border-radius: 10px 10px 0px 0px;
+}
+
+.banner{
+  position: absolute;
+  display: inline-flex;
+padding: 4px 8px;
+/* padding: 2px 2px; */
+
+
+/* align-items: flex-start; */
+/* justify-content: center; */
+gap: 1px;
+border-radius: 10px;
+background: #121212;
+margin-top: 2px;
+margin-bottom: 2px;
+
+}
+
+.chip{
+
+  color: #FFF !important;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* padding-top: 6px; */
+/* margin-top: 6px; */
+}
+
+.titleWrapper{
+
+  color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

@@ -1,0 +1,22 @@
+{
+  "id": "7053ba7d-ffa4-4c73-ad90-7e001c2787e3",
+  "title": "Strident Analyst",
+  "description": "Quis ex rem tempore aperiam libero nobis.\nVoluptatibus omnis deleniti laborum minus fugiat molestiae iste consequuntur.",
+  "follows": 8420,
+  "image": "https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+  "slug": "strident-analyst",
+  "songs": [
+    {
+      "id": "f76f7818-72b9-4e91-a54b-f94671ade112",
+      "title": "Spill the Wine",
+      "artists": ["Leigh Breitenberg", "Tricia Hagenes"],
+      "genre": {
+        "key": "jazz",
+        "label": "Jazz"
+      },
+      "likes": 88563,
+      "image": "https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+      "durationInMs": 58002
+    }
+  ]
+}

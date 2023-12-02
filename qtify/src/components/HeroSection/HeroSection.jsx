@@ -23,7 +23,7 @@ function HeroSection() {
             <HeroText text="Over thousands podcast episodes" />
           </Grid>
         </Grid>
-        <Grid xs={4}>
+        <Grid>
           <HeroImage />
         </Grid>
       </Grid>

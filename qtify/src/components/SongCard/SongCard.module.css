@@ -1,0 +1,57 @@
+.bottom{
+
+}
+
+.description{
+
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.follows{
+
+
+  color: #FFF !important;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
+
+.songCard{
+
+  width: 159px;
+  height: 205px;
+  flex-shrink: 0;
+  border-radius: 10px !important;
+background: #FFF;
+/* padding-left: 2px; */
+
+}
+
+.chipContainer{
+  margin-left: 8px;
+margin-top: 2px;
+  /* width: 71px !important; */
+  height: 23px !important;
+  display: inline-flex;
+  padding: 4px 8px !important;
+  align-items: center;
+  gap: 1px;
+  border-radius: 10px;
+background: #121212;
+padding-left: 0px !important;
+padding-right: 0px !important;
+
+/* top: 6px; */
+
+
+
+}
