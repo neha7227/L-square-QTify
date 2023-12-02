@@ -11,7 +11,7 @@ function SongGrid() {
   const fetchCard = async () => {
     try {
       const res = await axios.get(api);
-      console.log(res.data);
+
       setSongCard(res.data);
       return res.data;
     } catch (e) {

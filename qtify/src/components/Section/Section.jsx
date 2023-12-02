@@ -14,19 +14,25 @@ function Section({ title, data, filterSource, type }) {
   useEffect(() => {
     if (filterSource) {
       filterSource().then((response) => {
-        const data = response;
-        setFilters([...filters, data]);
+        // const data = response;
+
+        const { data } = response;
+        // console.log(data.data, "data going in Section filters");
+        console.log(filters, " filters in section");
+        // setFilters([...filters, data]); //by sir
+        setFilters([...filters, ...data]);
       });
     }
   }, []);
-
+  console.log(filters.length, "filters.length");
   const showFilters = filters.length > 1;
-  const cardsToRender = data.filter((card) =>
+  const cardsToRender = data?.filter((card) =>
     showFilters && selectedFilterIndex !== 0
       ? card.genre.key === filters[selectedFilterIndex].key
       : card
   );
 
+  // console.log(cardsToRender, "cardsToRender");
   const handleToggle = () => {
     setCarouselToggle((prevState) => !prevState);
     // setCarouselToggle(!carouselToggle);
@@ -55,13 +61,13 @@ function Section({ title, data, filterSource, type }) {
         <div className={styles.cardsWrapper}>
           {!carouselToggle ? (
             <div className={styles.wrapper}>
-              {data.map((ele) => (
+              {cardsToRender.map((ele) => (
                 <Card data={ele} type={type} />
               ))}
             </div>
           ) : (
             <Carousel
-              data={data}
+              data={cardsToRender}
               //data={cardsToRender}
               // renderComponent={(data) => <Card data={data} type={type} />}
               renderComponent={(data) => <Card data={data} type={type} />}

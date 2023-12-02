@@ -18,8 +18,6 @@ const Controls = ({ data }) => {
 }; //whenever data changes, it moves to slide1
 
 function Carousel({ data, renderComponent }) {
-  // console.log(data, "in carousel");
-
   return (
     <div className={styles.wrapper}>
       <Swiper

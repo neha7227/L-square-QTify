@@ -3,6 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import styles from "./Filters.module.css";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -24,8 +25,11 @@ function TabPanel(props) {
 }
 
 function Filters(filters, selectedFilterIndex, setSelectedFilterIndex) {
+  // console.log(filters, "filters");
+  console.log(selectedFilterIndex, "selectedFilterIndex");
   const handleChange = (event, newValue) => {
-    setSelectedFilterIndex(newValue);
+    // console.log(newValue, "clicked");
+    filters.setSelectedFilterIndex(newValue);
   };
   function a11yProps(index) {
     return {
@@ -37,7 +41,7 @@ function Filters(filters, selectedFilterIndex, setSelectedFilterIndex) {
   return (
     <div>
       <Tabs
-        value={selectedFilterIndex}
+        value={filters.selectedFilterIndex}
         onChange={handleChange}
         aria-label="basic tabs example"
         TabIndicatorProps={{
@@ -49,10 +53,15 @@ function Filters(filters, selectedFilterIndex, setSelectedFilterIndex) {
         {/* <Tab label="Item One" {...a11yProps(0)} />
         <Tab label="Item Two" {...a11yProps(1)} />
         <Tab label="Item Three" {...a11yProps(2)} /> */}
-        {filters.map((ele, index) => {
-          <Tab label={ele.label} {...a11yProps(index)} />;
-        })}
+        {filters?.filters?.map((ele, index) => (
+          <Tab className={styles.tab} label={ele.label} {...a11yProps(index)} />
+        ))}
       </Tabs>
+
+      {filters?.filters?.map((ele, index) => (
+        // <TabPanel label={ele.label} index={index} />
+        <TabPanel label={ele.label} index={index} />
+      ))}
     </div>
   );
 }

@@ -8,7 +8,7 @@ import Hero from "./components/Hero/Hero";
 // import data from "./components/data.json";
 import { StyledEngineProvider } from "@mui/material";
 import { Outlet } from "react-router-dom"; // outlet is used to share data across multiple components
-import { fetchNewAlbums, fetchTopAlbums } from "./api/api";
+import { fetchNewAlbums, fetchSongs, fetchTopAlbums } from "./api/api";
 
 function App() {
   const [data, setData] = useState({});
@@ -21,10 +21,12 @@ function App() {
   };
   useEffect(()=>{
 generateData("topAlbums", fetchTopAlbums);
-generateData("newAlbums", fetchNewAlbums)
+generateData("newAlbums", fetchNewAlbums);
+generateData("songs", fetchSongs);
+
   },[]);
 
-  const {topAlbums = [], newAlbums=[] } = data;
+  const {topAlbums = [], newAlbums=[], songs=[] } = data;
   console.log(data)
     return (
     <>
@@ -35,7 +37,7 @@ generateData("newAlbums", fetchNewAlbums)
         {/* <SongCard/> */}
         {/* <Card data={data} type="album"/> */}
         {/* <SongGrid/> */}
-        <Outlet context={{data:{topAlbums, newAlbums}}} />
+        <Outlet context={{data:{topAlbums, newAlbums, songs}}} />
         {/* uses of Outlet: 1. on the basis of path(given in index.js), outlet is replaced with that component
   2. Sharing data -- the data loaded in App() is shared across all pages which are going to be replaced by Outlet. So we make api call as well
   3. Outlet is type of context which allow us to share data across multiple components

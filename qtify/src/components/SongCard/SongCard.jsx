@@ -10,7 +10,6 @@ import Box from "@mui/material/Box";
 import SongImg from "../../assets/SongCard.png";
 
 function SongCard({ cardData }) {
-  console.log(cardData, "cardData");
   return (
     <>
       <Box>
